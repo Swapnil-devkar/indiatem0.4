@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <title>Space</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+             header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, #01121c 60%, #0ad5d5 97%);
+            color: #fff;
+            background-color: hsl(208, 61%, 94%);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+        }
+
+        .logo-video {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .button {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 16px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        .button a:hover {
+            background: linear-gradient(90deg, #01121c 60%, #0ad5d5 97%);
+            color: #fff;
+            color: white;
+        }
+
+        .content {
+            position: relative;
+            padding: 30px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #00ffc3;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .mission-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .mission-text {
+            flex: 1 1 350px;
+            max-width: 600px;
+        }
+
+        .mission-image {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .mission-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            border: 6px solid black;
+            box-shadow: 0 5px 20px rgba(0, 204, 255, 0.3);
+            transition: transform 0.4s ease;
+            cursor: pointer;
+        }
+
+        .mission-image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+        }
+
+        h2 {
+            color: #00ffcc;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .intro {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+
+            .mission-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="videochand.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header>
+        <video class="logo-video" autoplay muted loop>
+            <source src="logo2.mp4" type="video/mp4">
+        </video>
+        <div class="button">
+            <a href="index.html">Home</a>
+            <a href="space.html">Space</a>
+            <a href="covid.html">COVID</a>
+            <a href="operation.html">Operation</a>
+            <a href="about.html">About</a>
+        </div>
+    </header>
+    <div class="content">
+        <h1>🌕 Missions Chandrayaan</h1>
+        <div class="intro">
+            India's journey to explore the Moon is a story of scientific brilliance, dedication, and ambition...
+        </div>
+        <div class="mission-section">
+            <div class="mission-image">
+                <img src="chandrayan1img.png">
+            </div>
+            <div class="mission-text">
+                <h2>🚀 Chandrayaan-1: India's First Mission to the Moon (2008)</h2>
+                <p>Chandrayaan-1 was India's first-ever lunar mission and a major milestone in the history of Indian
+                    space exploration. Launched on 22 October 2008 by the Indian Space Research Organisation (ISRO), the
+                    mission marked India's entry into the elite club of nations capable of deep space exploration. The
+                    mission was launched from the Satish Dhawan Space Centre in Sriharikota using the Polar Satellite
+                    Launch Vehicle (PSLV-C11). Its main objective was to orbit the Moon and gather data about its
+                    surface, mineral composition, and topography.
+                    Chandrayaan-1 was an orbiter mission, meaning it did not land on the Moon. Instead, it carried a
+                    suite of 11 scientific instruments from various international space agencies including NASA, ESA
+                    (European Space Agency), and Bulgaria, along with five instruments developed by Indian scientists.
+                    The mission's most remarkable achievement came when the Moon Impact Probe (MIP), one of the mission
+                    components, was intentionally crashed onto the lunar surface. </p>
+
+            </div>
+        </div>
+        <div class="mission-section">
+            <div class="mission-image">
+                <img src="chandrayan2img.png">
+            </div>
+            <div class="mission-text">
+                <h2>🌔 Chandrayaan-2: Attempt to Soft-Land on the Moon (2019)</h2>
+                <p>Chandrayaan-2 was India's second lunar mission and one of the most ambitious projects undertaken by
+                    the Indian Space Research Organisation (ISRO). It was launched on 22 July 2019 from the Satish
+                    Dhawan Space Centre in Sriharikota using the powerful GSLV Mk III-M1 rocket, India's most advanced
+                    launch vehicle at the time. Building upon the success of Chandrayaan-1, this mission aimed not just
+                    to orbit the Moon but also to soft-land a lander and deploy a rover, a complex and
+                    never-before-attempted feat by India.</p>
+                The Chandrayaan-2 spacecraft consisted of three components: the Orbiter, the Lander (named Vikram), and
+                the Rover (named Pragyan). The orbiter was equipped with advanced scientific instruments to map the
+                lunar surface and analyze the exosphere. It was designed to function for one year but is still
+                operational and continues to send back valuable scientific data. The lander, Vikram, was designed to
+                make a gentle descent onto the Moon's surface near the south polar region, a place no other mission had
+                targeted before. Once landed, the Pragyan rover was expected to roll out and analyze soil composition,
+                conduct elemental analysis, and study the lunar surface.</p>
+            </div>
+        </div>
+        <div class="mission-section">
+            <div class="mission-image">
+                <img src="chandrayan3img.jpg">
+            </div>
+            <div class="mission-text">
+                <h2>🌖 Chandrayaan-3: India's Historic Soft Landing (2023)</h2>
+                <p>Chandrayaan-3 stands as a monumental achievement in India's space history, marking the country's
+                    first successful soft landing on the Moon. Launched on 14 July 2023 by the Indian Space Research
+                    Organisation (ISRO) using the trusted LVM3-M4 rocket, Chandrayaan-3 became a globally celebrated
+                    mission when it successfully landed near the Moon's south pole on 23 August 2023. With this
+                    achievement, India became the first country to land near the Moon's south pole and the fourth
+                    country in the world—after the USA, Russia, and China—to perform a soft landing on the lunar
+                    surface. This mission was a direct follow-up to Chandrayaan-2, designed to fix the issues from the
+                    previous attempt and prove India's ability to land safely on another celestial body.</p>
+                <p>Unlike Chandrayaan-2, Chandrayaan-3 was a simplified mission with just two components: a lander named
+                    Vikram and a rover named Pragyan. It did not include an orbiter, as the still-functioning orbiter
+                    from Chandrayaan-2 was used for communication and observation. The lander was equipped with improved
+                    guidance, navigation, and control systems to ensure a safe landing, even in challenging terrain. The
+                    mission focused on demonstrating critical technologies for safe landing, such as altitude sensors,
+                    hazard detection systems, and throttleable engines.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
